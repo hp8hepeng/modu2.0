@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS DOCUMENT -->
+    <!-- 去除默认样式 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- content -->
+    <link rel="stylesheet" href="../css/jdjcqk.css">
+    <!-- container -->
+    <link rel="stylesheet" href="../css/container.css">
+    <!-- tab -->
+    <link rel="stylesheet" href="../css/tab.css">
+    <!-- table -->
+    <link rel="stylesheet" href="../css/table.css">
+
+
+    <script src="../lib/jquery-1.8.3.min.js"></script>
+    <script src="../lib/echarts.js"></script>
+    <script src="../js/echar/echart.js"></script>
+    <script src="../echartDate/ywgl.js"></script>
+    <script src="../js/yp/jdjcqk.js"></script>
+    <style>
+        table tr td:nth-child(2) {
+            width: 50%;
+            font-size: 18px;
+        }
+        
+        table tr td:nth-child(1) {
+            width: 5%;
+            font-size: 18px;
+        }
+        
+        table tr td:nth-child(3) {
+            width: 20%;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:100%; border-right:1px solid #ccc; display: flex;border-bottom:1px solid #ccc;width:100%">
+        <div id="bar1" style="width:100%; height:500px;"></div>
+    </div>
+    <div style="width:100%; border-right:1px solid #ccc; display: flex;border-bottom:1px solid #ccc;width:100%">
+        <div style="width:50%;border-right:2px solid #ccc;margin-right:10px;">
+            <table>
+                <tr>
+                    <th>序号</th>
+                    <th>行政审批项目</th>
+                    <th>数量（件）</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>药品零售企业筹建申请</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>药品零售企业许可验收申请</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>药品零售企业变更申请</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>药品零售企业变更验收申请</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>药品零售企业换证申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>药品零售企业注销申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>药品连锁企业筹建申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>药品连锁企业许可验收申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>药品连锁企业变更申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>药品连锁企业变更验收申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>药品连锁企业换证申请</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>药品连锁企业注销申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>药品生产企业接受境外制药厂商委托加工药品备案</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>第二类精神药品原料药需用计划备案审查</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>麻醉药品、精神药品邮寄证明申请须知</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>蛋白同化制剂、肽类激素出口许可证审批</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>新制剂注册</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>制剂注册补充</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>医疗机构制剂再注册申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>医疗机构中药制剂委托配制新办</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>医疗机构中药制剂委托配制续展</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>非药品生产企业《咖啡因购用证明》审批</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>经营第一类中的药品类易制毒化学品审批</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>药品批发企业GSP认证</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>药品零售连锁（总部）GSP认证</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>药品零售企业GSP认证</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>药品生产企业许可新开办</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>科研、教学购用麻醉药品、精神药品(含对照品)以及医疗用毒性药品的审批</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>药品GMP认证</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>药品GMP认证变更</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>药品经营企业从事第二类精神药品批发业务的审批</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>中药保护品种的申请(初审)申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>药品批发企业筹建</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>药品批发企业验收</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>药品批发企业变更申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>药品批发企业变更验收</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>药品批发企业换证申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>药品批发企业注销申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>医疗机构制剂调剂审批申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>医疗机构制剂室许可新办申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>医疗机构制剂室许可变更申请</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>医疗机构制剂室许可换证申请</td>
+                    <td>21</td>
+                </tr>
+
+            </table>
+        </div>
+        <div style="width:50%">
+            <table>
+                <tr>
+                    <th>序号</th>
+                    <th>行政审批项目</th>
+                    <th>数量（件）</th>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>《医疗机构放射性药品使用许可》新办</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>《医疗机构放射性药品使用许可》变更</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>药品类易制毒化学品购买许可</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>药品委托生产新办</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>药品委托生产延续</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>药品进口备案</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>药品生产企业接受境外制药厂商委托加工麻醉药品或精神药品以及含麻醉药品或精神药品复方制剂(初审)</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>药品生产企业许可变更</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>药品生产企业许可换证</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>进口药材登记备案</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>接受境外制药厂商委托加工药品履行情况表</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>药品零售连锁企业从事第二类精神药品制剂零售业务的审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>医疗机构制剂临床审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>药品再注册</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>麻醉药品、第一类精神药品和第二类精神药品原料药定点生产</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>57</td>
+                    <td>第二类精神药品制剂定点生产审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>58</td>
+                    <td>麻醉药品、第一类精神药品和第二类精神药品原料药生产计划和麻醉药品、第一类精神药品需用计划</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>59</td>
+                    <td>毒性药品收购、经营审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>罂粟壳经营（批发）审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>61</td>
+                    <td>区域性批发企业需就近向其他省、自治区、直辖市行政区域内的取得麻醉药品和第一类精神药品使用资格的医疗机构销售麻醉药品和第一类精神药品的审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>保健食品广告审查</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td>蛋白同化制剂、肽类激素进口准许证核发</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>药品广告审查</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>65</td>
+                    <td>药品广告异地备案</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>66</td>
+                    <td>保健食品广告审查</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>蛋白同化制剂、肽类激素进口准许证核发</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>药品广告审查</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td>药品广告异地备案</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>医疗器械广告审查</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>71</td>
+                    <td>互联网药品信息服务</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>72</td>
+                    <td>执业药师注册</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>73</td>
+                    <td>《麻醉药品、第一类精神药品运输证明》审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>74</td>
+                    <td>药品类易制毒化学品生产许可</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>75</td>
+                    <td>药品零售连锁企业从事第二类精神药品制剂零售业务的审批变更许可</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>76</td>
+                    <td>毒性药品经营（零售）审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>77</td>
+                    <td>罂粟壳经营（零售）审批</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>78</td>
+                    <td>国产非特殊用途化妆品备案（一级审查）</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>79</td>
+                    <td>药品上市许可持有人申请</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>《出口欧盟原料药证明文件》</td>
+                    <td>21</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
