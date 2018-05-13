@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- CSS DOCUMENT -->
+    <!-- 去除默认样式 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/zsqk.css">
+
+
+    <script src="../lib/jquery-1.8.3.min.js"></script>
+    <script src="../lib/echarts.js"></script>
+    <script src="../js/echar/echart.js"></script>
+    <script src="../echartDate/zsqk.js"></script>
+    <script src="../js/zsqk/zsqk.js"></script>
+
+</head>
+
+<body>
+    <div class="fd-topCont fd-zhqk">
+        <h3>药品流通情况</h3>
+        <div id="fd-zsqk-chart01" style="height:calc(100% - 50px);"></div>
+        <div class="fd-mark" style="height:calc(100% - 50px);">
+            <div>
+                <div class="fd-title">购入药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>893</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>923</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>984</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>931</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>981</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">销售药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>983</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>873</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>872</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>908</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>999</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">库存药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>879</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>834</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>836</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>908</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>984</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fd-centCont">
+        <div id="fd-zsqk-chart03"></div>
+        <div class="fd-mark">
+            <div>
+                <div class="fd-title">购入药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>983</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>904</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>989</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>904</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>874</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">销售药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>874</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>833</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>903</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>934</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>934</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">库存药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>903</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>986</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>905</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>943</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>952</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fd-botCont">
+        <div id="fd-zsqk-chart04"></div>
+        <div class="fd-mark">
+            <div>
+                <div class="fd-title">购入药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>803</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>934</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>954</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>944</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>944</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">销售药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>944</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>834</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>833</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>896</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>826</span> -->
+                </div>
+            </div>
+            <!--  -->
+            <div>
+                <div class="fd-title">库存药品数量排名</div>
+                <div class="fd-nameMark">1.企业名称....
+                    <!-- <span>833</span> -->
+                </div>
+                <div class="fd-nameMark">2.企业名称....
+                    <!-- <span>893</span> -->
+                </div>
+                <div class="fd-nameMark">3.企业名称....
+                    <!-- <span>894</span> -->
+                </div>
+                <div class="fd-nameMark">4.企业名称....
+                    <!-- <span>904</span> -->
+                </div>
+                <div class="fd-nameMark">5.企业名称....
+                    <!-- <span>926</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fd-centCont fd-zhqk">
+        <h3>药品(单品)购销情况</h3>
+        <div class="fd-markLine">
+            <div class="clearfix">
+                <div class="fd-Linetitle">
+                    <span>单品采购量前五</span>
+                </div>
+                <div class="fd-markcont">
+                    <div class="fd-nameMark">1.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">2.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">3.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">4.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">5.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="clearfix">
+                <div class="fd-Linetitle">
+                    <span>单品销售量前五</span>
+                </div>
+                <div class="fd-markcont">
+                    <div class="fd-nameMark">1.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">2.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">3.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">4.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                    <div class="fd-nameMark">5.企业名称....
+                        <!-- <span>834</span> -->
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <div class="fd-botCont fd-zhqk">
+        <h3>药品召回情况</h3>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>召回企业</th>
+                <th>药品名称</th>
+                <th>药品批准文号</th>
+                <th>批次号</th>
+                <th>召回数量</th>
+                <th>召回原因</th>
+                <th>召回日期</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

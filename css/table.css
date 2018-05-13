@@ -1,0 +1,157 @@
+
+/* table */
+.fd-table-title{
+    color: #465a63;
+    font-size: 12px;
+    font-weight: 600;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 4px;
+}
+.fd-table-th{
+    color: #465a63;
+    font-size:14px;
+    height: 30px;
+    background: #ecf1f5;
+    line-height: 30px;
+}
+.fd-table-th span{
+    float: left;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.fd-one{
+    float: left;
+    background:url(../images/one.png) no-repeat;
+    background-size:100% 100%;
+    width:14px;
+    height:14px;
+    margin-right:10px;
+}
+.fd-two{
+    float: left;
+    background:url(../images/two.png) no-repeat;
+    background-size:100% 100%;
+    width:14px;
+    height:14px;
+    margin-right:10px;
+}
+.fd-three{
+    float: left;
+    background:url(../images/three.png) no-repeat;
+    background-size:100% 100%;
+    width:14px;
+    height:14px;
+    margin-right:10px;
+}
+.fd-four{
+    float: left;
+    background:url(../images/four.png) no-repeat;
+    background-size:100% 100%;
+    width:14px;
+    height:14px;
+    margin-right:10px;
+
+}
+.fd-five{
+    float: left;
+    background:url(../images/five.png) no-repeat;
+    background-size:100% 100%;
+    width:14px;
+    height:14px;
+    margin-right:10px;
+
+}
+.fd-body .fd-percent-3 {
+    display: flex;
+    height: 33.3333%;
+}
+.fd-body .fd-percent-5 {
+    display: flex;
+    height: 20%;
+}
+.fd-body {
+    height:calc(100% - 60px);
+}
+.fd-body div,
+.content_center .fd-body div{
+    border-bottom:1px solid #f0f3f5;
+    font-size:12px;
+}
+.fd-body div p,
+.content_center .fd-body div p {
+	float: left;
+    height:100%;
+	text-align: center;
+}
+.fd-border-right{
+    border-right: 1px dashed #d7dadb;
+}
+.fd-table-up{
+    margin-left:5px;
+}
+.fd-table-down{
+    margin-left:5px;
+}
+.fd-ellipsis {
+	float: right;
+	width: 100%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fd-body .fd-card1,
+.fd-body .fd-card2,
+.fd-body .fd-card3 {
+	display: inline-block;
+	width: 64px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #fff;
+	border-radius: 2px;
+}
+.fd-body .fd-card1 {
+	background-color: #ff8383;
+}
+.fd-body .fd-card2 {
+	background-color: #ffcf83;
+}
+.fd-body .fd-card3 {
+	background-color: #9beca0;
+}
+.fd-sign.fd-table-th {
+	background: #fcf6ea;
+}
+.fd-table-th.fd-sign + .fd-body .fd-one {
+	background: #ff7070;
+	border-radius: 25%;
+	line-height: 14px;
+	color: #fff;
+}
+.fd-table-th.fd-sign + .fd-body .fd-two {
+	background: #ffbe33;
+	border-radius: 25%;
+	line-height: 14px;
+	color: #fff;
+}
+.fd-table-th.fd-sign + .fd-body .fd-three {
+	background: #85e561;
+	border-radius: 25%;
+	line-height: 14px;
+	color: #fff;
+}
+.fd-table-th.fd-sign + .fd-body .fd-four {
+	background: #33a6ff;
+	border-radius: 25%;
+	line-height: 14px;
+	color: #fff;
+}
+.fd-table-th.fd-sign + .fd-body .fd-five {
+	background: #be33ff;
+	border-radius: 25%;
+	line-height: 14px;
+	color: #fff;
+}

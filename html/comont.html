@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CSS DOCUMENT -->
+    <!-- 去除默认样式 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="../css/head.css">
+    <!-- 左侧nav -->
+    <link rel="stylesheet" href="../lib/leftNav/menu-css.css">
+    <link rel="stylesheet" href="../css/leftNav.css">
+    <!-- lmwCont区域 -->
+
+
+
+    <!-- JS -->
+    <script src="../lib/jquery-1.8.3.min.js"></script>
+    <!-- 左侧导航JS -->
+    <script src="../lib/leftNav/menu_min.js"></script>
+    <!-- 整体JS事件 -->
+    <script src="../js/operator.js"></script>
+
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div class="fd-app">
+        <!-- 上导航 -->
+        <div class="fd-header">
+            <div class="fd-logo floatL">
+                <h1>上海市药品安全监管和信息服务平台</h1>
+            </div>
+            <div class="fd-usar floatR">
+                <div class="fd-userHead floatL"></div>
+                <div class="fd-setMark floatL">
+                    <div>杜德森</div>
+                    <div>2017.02.23 10:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fd-content">
+            <!-- 左侧导航 -->
+            <div class="fd-leftNav">
+                <div class="menu">
+                    <ul>
+                        <li><a id="ywfx">业务分析</a>
+                            <ul style="display: block;">
+                                <li><a data-router="ywgl">业务概览</a></li>
+                                <li><a data-router="ywgl">药品</a><i></i>
+                                    <ul>
+                                        <li><a>业务概览</a><i></i>
+                                            <ul>
+                                                <li><a data-router="xzspqk">监管相对人情况</a></li>
+                                                <li><a data-router="jdjcqk">行政审批情况</a></li>
+                                                <li><a data-router="jdjc">监督检查情况</a></li>
+                                                <li><a data-router="ypcyqk">药品抽验情况</a></li>
+                                                <li><a data-router="tsjb">投诉举报情况</a></li>
+                                                <li><a data-router="jcba">稽查办案情况</a></li>
+                                                <li><a data-router="zsqk">追溯情况</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-router="ywgl">业务特征分析</a></li>
+                                        <li><a data-router="ywgl">业务异常分析</a></li>
+                                        <li><a data-router="ywgl">监督成效分析</a></li>
+                                        <li><a data-router="ywgl">监管策略分析</a></li>
+                                        <li><a data-router="ywgl">监管风险分析</a></li>
+                                    </ul>
+                                </li>
+                                <li><a data-router="ywgl">医疗器械</a></li>
+                                <li><a data-router="ywgl">化妆品</a></li>
+                                <li><a data-router="ywgl">专题分析</a></li>
+                                <li><a data-router="ywgl">敏捷分析</a></li>
+                            </ul>
+                        </li>
+                        <li><a data-router="ywgl" id="tyjs">同意检索</a></li>
+                        <li><a data-router="ywgl" id="yyfl">应用管理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中心内容区 -->
+            <div class="fd-cont">
+                <iframe id="fd-Iframe" frameborder="0" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

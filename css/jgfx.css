@@ -1,0 +1,39 @@
+.container {
+	width: 100%;
+	height: calc(100% - 48px);
+}
+/*left*/
+.fd-left-box {
+	float: left;
+	width: calc(100% - 415px);
+	height: 100%;
+}
+.fd-left-box .content_content {
+	background: url(../images/icon-Bmap.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.content {
+	margin-top: 0;
+}
+/*right*/
+.fd-right-box {
+	float: right;
+	width: 405px;
+	height: 100%;
+}
+.fd-right-box .content {
+	height: calc(33.333% - 6px);
+	margin-bottom: 9px;
+}
+.fd-right-box .content:nth-last-child(1) {
+	margin-bottom: 0;
+}
+.fd-table-th.fd-cdfxqy + .fd-body p,
+.fd-table-th.fd-zdfxcp + .fd-body p,
+.fd-table-th.fd-zdfxcppz + .fd-body p {
+	width: 33.3333%;
+}
+.fd-table-th + .fd-body {
+	height: calc(100% - 35px);
+	margin-top: 5px;
+}
